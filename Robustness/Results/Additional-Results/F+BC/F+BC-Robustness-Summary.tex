@@ -1,0 +1,18 @@
+\begin{table*}[htb]
+    \centering
+	\caption{Comparing \(\pmnr\) to the \(\FBC\) configuration of Forward-Backward Abstract Interpretation.}
+	\begin{tabular}{|c|c|cc|cc|}
+		\hline
+		\multirow{2}{*}{Model}                   & \multirow{2}{*}{Queries}       &
+		\multicolumn{2}{c|}{\(\pmnr\)} & \multicolumn{2}{c|}{\texttt{F+BC}}                                                                                                                                         \\ \cline{3-6}
+		                                         &                                & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) \\ \hline
+		\LeakyReluFive                           & 100                            & \multicolumn{1}{c|}{\textbf{100}}        & \textbf{67}         & \multicolumn{1}{c|}{97}                  & 137                 \\ \hline
+		\LeakyReluEight                          & 100                            & \multicolumn{1}{c|}{\textbf{98}}         & \textbf{294}        & \multicolumn{1}{c|}{33}                  & 530                 \\ \hline
+		\LeakyReluFourteen                       & 36                             & \multicolumn{1}{c|}{\textbf{29}}         & 1321                & \multicolumn{1}{c|}{27}                  & \textbf{54}         \\ \hline
+		\ReluSignMax                             & 36                             & \multicolumn{1}{c|}{\textbf{18}}         & 6138                & \multicolumn{1}{c|}{9}                   & \textbf{2}          \\ \hline
+		\ReluBilinearSoftmax                     & 36                             & \multicolumn{1}{c|}{\textbf{29}}         & 54                  & \multicolumn{1}{c|}{10}                  & \textbf{38}         \\ \hline
+		\LeakyReluSigmoid                        & 36                             & \multicolumn{1}{c|}{\textbf{27}}         & 22                  & \multicolumn{1}{c|}{18}                  & \textbf{5}          \\ \hline
+		Total                                    & 344                            & \multicolumn{1}{c|}{\textbf{301}}        & 619                 & \multicolumn{1}{c|}{194}                 & \textbf{168}        \\ \hline
+	\end{tabular}
+	\label{tab:results-forward-backward}
+\end{table*}

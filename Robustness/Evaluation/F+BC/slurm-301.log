@@ -1,0 +1,17 @@
+Query: MNIST/PiecewiseLinear/ipq/ReLUSignMax/input_query_ind0_target0_eps0.020.ipq
+Engine::processInputQuery: Input query (before preprocessing): 215 equations, 1270 variables
+unsat
+correct label: 7
+Running Marabou with the following arguments:  ['--verbosity=2', '--milp-tightening=backward-converge', '--dump-bounds', '--dump-topology']
+Number of variables: 1270
+Number of lower bounds: 896
+Number of upper bounds: 868
+Number of equations: 215
+Number of non-linear constraints: 280
+c host: gringolet-06
+c tmpdir: 
+c start: 18:57:22.524159072
+c arrayjobid: 28657510
+c jobid: 28693872
+c finish: 18:57:22.529364033
+c done

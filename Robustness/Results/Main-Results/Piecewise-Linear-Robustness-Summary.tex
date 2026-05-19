@@ -1,0 +1,16 @@
+\begin{table*}[htb]
+    \centering
+	\caption{Comparing \(\pmnr\) to DeepPoly and \(\pmnrall\) on piecewise-linear networks.}
+	\begin{tabular}{|c|c|cc|cc|cc|}
+		\hline
+		\multirow{2}{*}{Model}         & \multirow{2}{*}{Queries}      &
+		\multicolumn{2}{c|}{\(\pmnr\)} & \multicolumn{2}{c|}{DeepPoly} & \multicolumn{2}{c|}{\(\pmnrall\)}                                                                                                                                                                \\ \cline{3-8}
+		                               &                               & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) \\ \hline
+		\LeakyReluFive                 & 100                           & \multicolumn{1}{c|}{\textbf{100}}        & \textbf{67}         & \multicolumn{1}{c|}{97}                  & 129                 & \multicolumn{1}{c|}{40}                  & 5003                \\ \hline
+		\LeakyReluEight                & 100                           & \multicolumn{1}{c|}{\textbf{98}}         & \textbf{294}        & \multicolumn{1}{c|}{33}                  & 501                 & \multicolumn{1}{c|}{0}                   & \(\infty\)          \\ \hline
+		\LeakyReluFourteen             & 36                            & \multicolumn{1}{c|}{\textbf{29}}         & 1321                & \multicolumn{1}{c|}{26}                  & \textbf{16}         & \multicolumn{1}{c|}{0}                   & \(\infty\)          \\ \hline
+		\ReluSignMax                   & 36                            & \multicolumn{1}{c|}{\textbf{18}}         & \textbf{6138}       & \multicolumn{1}{c|}{\textbf{18}}         & 6742                & \multicolumn{1}{c|}{0}                   & \(\infty\)          \\ \hline
+		Total                          & 272                           & \multicolumn{1}{c|}{\textbf{245}}        & \textbf{752}        & \multicolumn{1}{c|}{174}                 & 866                 & \multicolumn{1}{c|}{40}                  & 5003                \\ \hline
+	\end{tabular}
+	\label{tab:results-piecewise-linear}
+\end{table*}

@@ -1,0 +1,14 @@
+\begin{table*}[htb]
+	\centering
+	\caption{Comparing \(\pmnr\) to DeepPoly and \(\pmnrall\) on NPL FFNNs.}
+	\begin{tabular}{|c|c|cc|cc|cc|}
+		\hline
+		\multirow{2}{*}{Model}         & \multirow{2}{*}{Queries}       &
+		\multicolumn{2}{c|}{\(\pmnr\)} & \multicolumn{2}{c|}{DeepPoly}  & \multicolumn{2}{c|}{\(\pmnrall\)}                                                                                                                                                                \\ \cline{3-8}
+		                               &                                & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) \\ \hline
+		\ReluBilinearSoftmax           & 36                             & \multicolumn{1}{c|}{29}                  & 54                  & \multicolumn{1}{c|}{10}                  & \textbf{46}         & \multicolumn{1}{c|}{\textbf{36}}         & 6485                \\ \hline
+		\LeakyReluSigmoid              & 36                             & \multicolumn{1}{c|}{\textbf{27}}         & 22                  & \multicolumn{1}{c|}{18}                  & \textbf{19}         & \multicolumn{1}{c|}{18}                  & 50                  \\ \hline
+		Total                          & 72                             & \multicolumn{1}{c|}{\textbf{56}}         & 38                  & \multicolumn{1}{c|}{28}                  & \textbf{28}         & \multicolumn{1}{c|}{54}                  & 4340                \\ \hline
+	\end{tabular}
+	\label{tab:results-npl}
+\end{table*}

@@ -1,0 +1,18 @@
+\begin{table*}[htb]
+    \centering
+	\caption{Comparing maximum main loop iteration values of \(n=1\) and \(n=10\) for \(\pmnr\).}
+	\begin{tabular}{|c|c|cc|cc|}
+		\hline
+		\multirow{2}{*}{Model}                   & \multirow{2}{*}{Queries}       &
+		\multicolumn{2}{c|}{\(\pmnr\) (n=10)} & \multicolumn{2}{c|}{\(\pmnr\) (n=1)}                                                                                                                                \\ \cline{3-6}
+		                                         &                                & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) & \multicolumn{1}{c|}{Solved \(\uparrow\)} & Time \(\downarrow\) \\ \hline
+		\LeakyReluFive                           & 100                            & \multicolumn{1}{c|}{\textbf{100}}        & 67                  & \multicolumn{1}{c|}{\textbf{100}}        & \textbf{49}         \\ \hline
+		\LeakyReluEight                          & 100                            & \multicolumn{1}{c|}{\textbf{98}}         & 294                 & \multicolumn{1}{c|}{97}                  & \textbf{234}        \\ \hline
+		\LeakyReluFourteen                       & 36                             & \multicolumn{1}{c|}{\textbf{29}}         & 1321                & \multicolumn{1}{c|}{27}                  & \textbf{137}        \\ \hline
+		\ReluSignMax                             & 36                             & \multicolumn{1}{c|}{\textbf{18}}         & 6138                & \multicolumn{1}{c|}{\textbf{18}}         & \textbf{5607}       \\ \hline
+		\ReluBilinearSoftmax                     & 36                             & \multicolumn{1}{c|}{\textbf{29}}         & \textbf{54}         & \multicolumn{1}{c|}{\textbf{29}}         & 57                  \\ \hline
+		\LeakyReluSigmoid                        & 36                             & \multicolumn{1}{c|}{\textbf{27}}         & \textbf{22}         & \multicolumn{1}{c|}{\textbf{27}}         & 28                  \\ \hline
+		Total                                    & 344                            & \multicolumn{1}{c|}{\textbf{301}}        & 619                 & \multicolumn{1}{c|}{298}                 & \textbf{451}        \\ \hline
+	\end{tabular}
+	\label{tab:results-once}
+\end{table*}
