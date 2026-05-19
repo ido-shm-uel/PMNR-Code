@@ -121,11 +121,11 @@ for ```<METHOD>``` values of ```DeepPoly```, ```PMNR-ALL```:
 
 - Two ```.pdf``` files contain cactus plots which
 compare the cumulative running time of PMNR-enhanced Marabou and number of solved queries, versus base Marabou and PMNR-ALL-enhanced Marabou:
-at ```Robustness/Results/Main-Results/LeakyReLU-Robustness-Cactus.pdf``` for piecewise-linear networks,
+```Robustness/Results/Main-Results/LeakyReLU-Robustness-Cactus.pdf``` for piecewise-linear networks,
 and ```Robustness/Results/Main-Results/Other-Robustness-Cactus.pdf``` for non-piecewise-linear networks.
 
 - Six more ```.pdf``` files contain cactus plots
 which compare the cumulative running time per number of solved queries of PMNR-enhanced Marabou versus ```<METHOD>```-enhanced Marabou
 for ```<METHOD>``` values of ```F+BC```, ```PMNR-ONCE```, ```PMNR-RANDOM```:
-at ```Robustness/Results/Additional-Results/<METHOD>-LeakyReLU-Robustness-Cactus.pdf``` for piecewise-linear networks,
+```Robustness/Results/Additional-Results/<METHOD>-LeakyReLU-Robustness-Cactus.pdf``` for piecewise-linear networks,
 and ```Robustness/Results/Additional-Results/<METHOD>-Other-Robustness-Cactus.pdf``` for non-piecewise-linear networks.
