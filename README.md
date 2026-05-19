@@ -56,7 +56,7 @@ before finally creating the remaining 144 input queries.
 ### Network Architectures
 
 | Model                      | Hidden<br>Neurons | Hidden<br>Layers |                 Activations                 | Piecewise<br>Linear? |
-|:---------------------------|:-----------------:|:----------------:|:-------------------------------------------:|:--------------------:|
+|:--------------------------:|:-----------------:|:----------------:|:-------------------------------------------:|:--------------------:|
 |   ```LeakyRelu5x100```     |        500        |        5         |              LeakyRelu&times;5              |       &check;        |
 |   ```LeakyRelu8x100```     |        800        |        8         |              LeakyReLU&times;8              |       &check;        |
 |   ```LeakyRelu14x28```     |        392        |        14        |              LeakyReLU&times;14             |       &check;        |
@@ -71,7 +71,7 @@ before finally creating the remaining 144 input queries.
 Once Marabou is compiled from source (see ```Marabou/README.md``` for instructions),
 Marabou is executed as follows:
 ```
-./Marabou --input-query <path-to-query.ipq]> --milp-tightening=<option>
+./Marabou --input-query <path-to-query.ipq> --milp-tightening=<option>
 ```
 
 ### Bound Tightening Algorithms
