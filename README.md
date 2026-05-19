@@ -117,7 +117,7 @@ for ```<METHOD>``` values of ```F+BC```, ```PMNR-ONCE```, ```PMNR-RANDOM```:
 - Two ```.pdf``` files contain scatter plots which
 compare the running time of PMNR-enhanced Marabou versus ```<METHOD>```-enhanced Marabou per each query
 for ```<METHOD>``` values of ```DeepPoly```, ```PMNR-ALL```:
-```Robustness/Results/Main-Results/<METHOD>--Robustness-Scatter.pdf```.
+```Robustness/Results/Main-Results/<METHOD>-Robustness-Scatter.pdf```.
 
 - Two ```.pdf``` files contain cactus plots which
 compare the cumulative running time of PMNR-enhanced Marabou and number of solved queries, versus base Marabou and PMNR-ALL-enhanced Marabou:
