@@ -30,11 +30,11 @@ for the first MNIST test set image using epsilon values of 0.02,
 
 Input query locations:
 - ```LeakyRelu5x100```: 100 queries at ```MNIST/PiecewiseLinear/ipq/LeakyReLU5x100```.
-- ```LeakyRelu8x100```: 100 queries at ```MNIST/PiecewiseLinear/ipq/LeakyRelu8x100```.
-- ```LeakyRelu14x28```: 36 queries at ```MNIST/PiecewiseLinear/ipq/LeakyRelu14x28```.
-- ```ReluSignMax```: 36 queries at ```MNIST/PiecewiseLinear/ipq/ReluSignMax```.
-- ```ReluBilinearSoftmax```: 36 queries at ```MNIST/NonPiecewiseLinear/ipq/ReluBilinearSoftmax```.
-- ```LeakyReluSigmoid```: 36 queries at ```MNIST/NonPiecewiseLinear/ipq/LeakyReluSigmoid```.
+- ```LeakyRelu8x100```: 100 queries at ```MNIST/PiecewiseLinear/ipq/LeakyReLU8x100```.
+- ```LeakyRelu14x28```: 36 queries at ```MNIST/PiecewiseLinear/ipq/LeakyReLU14x28```.
+- ```ReluSignMax```: 36 queries at ```MNIST/PiecewiseLinear/ipq/ReLUSignMax```.
+- ```ReluBilinearSoftmax```: 36 queries at ```MNIST/NonPiecewiseLinear/ipq/ReLUBilinearSoftmax```.
+- ```LeakyReluSigmoid```: 36 queries at ```MNIST/NonPiecewiseLinear/ipq/LeakyReLUSigmoid```.
 
 ### Query Generation
 
